@@ -1,0 +1,22 @@
+[project]
+name = "coding-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JoeMuldowney", email = "muldowneyjoe84@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp[cli]>=4.0.4",
+    "ollama>=0.6.2",
+    "openai>=3.25.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+coding-agent = "coding_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
